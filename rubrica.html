@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubrica</title>
+    <!-- Link esterni -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./rubrica.css">
+</head>
+<body>
+    <header class="container-fluid header-custom">
+        <div class="row">
+            <div class="col-12 md-8 mb-3">
+                <h1 class="text-center">LA RUBRICA DI GABRIELE</h1>
+            </div>
+        </div>   
+        <div class="row text-center">
+            <div class="col-3">
+                <button type="button"class="btn btn-custom">
+                    <h3>Modifica Contatto</h3>
+                    <i class="fa-solid fa-user-pen"></i>
+                </button>
+                
+            </div>
+            
+            <div class="col-6 mt-5 pt-4">
+                <button id="elenco" type ="button" class="btn btn-custom">
+                    <h2 id="registro">Mostra i Contatti</h2>
+                    <i class="fa-solid fa-arrow-down-short-wide"></i>
+                </button>
+            </div>
+            
+            <div class="col-3">
+                <button type ="button" class="btn btn-custom mb-5">
+                    <h3>Aggiungi Contatto</h3>
+                    <i class="fa-solid fa-user-plus"></i>
+                </button>
+                
+            </div>
+        </div>   
+    </header>
+    
+    <section class="container-fluid">
+        <div class="row justify-content-space-between">
+            <div class="col-3">
+                <div class="input-group mt-5 mb-5 w-100">
+                    <input id="Nome" type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3 w-100">
+                    <input id="Numero" type="text" class="form-control" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon1">
+                </div>
+                <button id="modifica" type="button" class="btn btn-primary d-block mx-auto">Modifica</button>
+                
+            </div>
+            <div id="wrapper" class="col-6">
+            </div>
+            <div class="col-3 align-items-center">
+                <div class="input-group mt-5 mb-3 w-100">
+                    <input id="nomeInput" type="text" class="form-control" placeholder="Nome" aria-label="Nome" aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mt-5 mb-3 w-100">
+                    <input id="numeroInput" type="text" class="form-control" placeholder="Numero" aria-label="Numero" aria-describedby="basic-addon1">
+                </div>
+                <button id="aggiungi" type="button" class="btn btn-primary d-block mx-auto">Aggiungi</button>
+            </div>
+        </div>
+        
+        <script src="https://kit.fontawesome.com/ca46e4f55b.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="./rubrica.js"></script>
+    </body>
+    </html>

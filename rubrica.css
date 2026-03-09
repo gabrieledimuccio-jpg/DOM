@@ -1,0 +1,50 @@
+.header-custom{
+    /* background-color: ; */
+    color: rgb(181, 138, 101); 
+    background-image: linear-gradient(to bottom, rgb(154, 173, 131) 40%, rgba(0, 0, 0, 0) 80%);
+    font-family: Playfair Display;
+    height: 290px;
+    
+}
+h3{
+    word-spacing: 2px;
+}
+body{
+    background-color: rgba(222, 197, 175, 0.8);
+    color: rgba(53, 115, 46, 0.709);
+}
+.btn-custom{
+    color: rgb(181, 138, 101); 
+    
+}
+button:hover { 
+    transform: scale(1.2); 
+    transition: all 0.5s ease;
+}
+p{
+    margin: 0%;
+}
+
+.cardBody{
+    border: 2px, solid, rgb(154, 173, 131);
+    height: 50px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon{
+    cursor: pointer;
+}
+.input-group{
+    border: 2px, solid, rgb(154, 173, 131);
+    border-radius: 0.575rem;
+}
+#elimina{
+    background-color: transparent;
+    border: 0px;
+}

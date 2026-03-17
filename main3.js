@@ -14,15 +14,18 @@ let tempo_rimanente = 0;
 
 // button Avvia/Riprendi
 avvia.addEventListener('click', ()=>{
-    counter = input.value;
     clearInterval(timer);
+    counter = input.value;
+    if (tempo_rimanente !== 0) {
+        counter = tempo_rimanente;
+    }
     timer = setInterval(() => {
-        if (counter <= 0) {
+        if (counter < 0) {
             alert(`Inserisci un numero positivo`);
             clearInterval(timer);
             countdown.innerHTML = "Tempo scaduto!";
-        }else if(countdown.innerHTML != tempo_rimanente) {
-            countdown.innerHTML--;
+            // }else if(countdown.innerHTML != tempo_rimanente) {
+            //     countdown.innerHTML--;
         } else {
             countdown.innerHTML = counter;
             counter--;
@@ -34,13 +37,12 @@ avvia.addEventListener('click', ()=>{
 // button Pausa
 pausa.addEventListener('click', ()=>{
     clearInterval(timer);
+    tempo_rimanente = counter;
 });
 
 // button Reset
 reset.addEventListener('click', ()=>{
-    if (countdown.innerHTML--) {
-        clearInterval(timer);
-        countdown.innerHTML = '00'
-        input.value = ''
-    }
+    input.value = ''
+    clearInterval(timer);
+    countdown.innerHTML = ''
 })
